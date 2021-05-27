@@ -1,0 +1,14 @@
+job('java file'){
+  scm {
+        git(git://https://github.com/JonesApoorva8/learningrepo.git'){
+        node ->
+        node/gitconfigName('Apoorv')
+        node/gitconfigEmail('saiapoorvapaila@gmail.com')
+        }
+     }
+    triggers{
+          scm('H/5 * * * *')
+          }
+          
+          }
+ 
